@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- head definitions go here -->
+        <title>Carter Moody's Website</title>
+
+
+    </head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+}  
+    </style>
+    <body>
+
+        <!-- This is the clickable nano link that works with the copyaddress.js script to auto copy when clicked! -->
+        <div style="font-size: 40px;" align="center" id="myItem" data-page_id="nano_36zcuomrbm6mudwused38ptrofk43kmqphuprcxwxkomk647wgaq6ocsweyb">nano_36zcuomrbm6mudwused38ptrofk43kmqphuprcxwxkomk647wgaq6ocsweyb</div>
+        <h2 style="text-align:center">Click the above address to copy it to your clipboard!</h2>
+
+
+        <!-- Footer -->
+        <hr></hr> <!-- Horizontal Ruler -->
+        <h5 id="info" style="text-align:center">Site Information</h5>
+        <p style="text-align:center">Website owned and operated by Carter Moody.
+            <a href="https://www.cartermoody.com">Click here to home</a>
+        </p>
+
+<!--
+            <script>
+            const copyToClipboard = str => {
+            const el = document.createElement('textarea');
+            el.value = str;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            };
+
+            const url ='';
+
+            document.getElementById('myItem').addEventListener('click', function(e){ 
+            let myUrl =  url + e.target.dataset.page_id;
+            copyToClipboard( myUrl );
+            alert(myUrl + ' copied to clipboard!')
+            });
+        </script>
+-->
+
+        <!-- This brings in the script that allows us to copy the nano address with one click! -->
+        <script src="copyaddress.js"></script>
+
+
+    </body>
+</html>

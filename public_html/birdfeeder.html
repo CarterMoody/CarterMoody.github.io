@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- head definitions go here -->
+        <title>Carter Moody's Website</title>
+    </head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}  
+    </style>
+    <body>
+
+        <h1 style="text-align:center">Live Interactive Bird Feeder</h1>
+        <h2 style="text-align:center">Enjoy feeding the birds!</h2>
+        <!-- <h2 style="text-align:center">https://www.youtube.com/watch?v=iwQtp40G_8Q</h2> -->
+
+        <!-- Load and Center two things side by side, also relies on CSS in Style section above
+        <div align="center">
+            <div class="row">
+
+                <div class="column">
+                    <img src="https://www.cartermoody.com/images/NanoSignMedium.png" 
+                        style="width:400px"
+                        alt="nano_1ae75uxbfmpdqreejgziwut1ufj7e9othf1efo1byfocsjuoe63rtdmo1fg4"
+                        onclick="location.href='Default.html'">
+                </div>
+
+                <div class="column">
+                    <iframe width="420" height="315";
+                    src="https://www.youtube.com/embed/dDmkrZHiTgU?autoplay=1&mute=1"
+                    allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+         -->
+
+
+        <!-- Load and Center Youtube Embed Video -->
+        <p align="center">
+            <iframe width="420" height="315";
+            src="https://www.youtube.com/embed/l46LHd6kmCE?autoplay=1&mute=1"
+            allowfullscreen>
+            </iframe>
+        </p>
+
+        
+        <!-- Load and Center an Image -->
+        <h2 style="text-align:center">Scan and send any amount of $NANO to feed the birds</h2>
+        <p style="text-align:center">Or alternatively use the !feed command in YouTube live chat</p>
+        <img src="https://www.cartermoody.com/images/NanoSignMedium.png" 
+            style="width:400px;display:block;margin:0 auto"
+            alt="nano_36zcuomrbm6mudwused38ptrofk43kmqphuprcxwxkomk647wgaq6ocsweyb"
+            onclick="location.href='Default.html'"> <!-- onclick sends back to main page -->
+        <br>
+
+        <!-- This is the clickable nano link that works with the copyaddress.js script to auto copy when clicked! -->
+        <div style="font-size: 40px;" align="center" id="myItem" data-page_id="nano_36zcuomrbm6mudwused38ptrofk43kmqphuprcxwxkomk647wgaq6ocsweyb">nano_36zcuomrbm6mudwused38ptrofk43kmqphuprcxwxkomk647wgaq6ocsweyb</div>
+        <h2 style="text-align:center">Click the above address to copy it to your clipboard!</h2>
+
+        <h2 style="text-align:center">
+            <a href="https://nano.org/get-nano">BUY $NANO</a>
+        </h2>
+        <p style="text-align:center">
+            <a href="https://www.reddit.com/r/nanocurrency/">Nano Reddit</a>
+        </p>
+        <p style="text-align:center">
+            <a href="https://github.com/CarterMoody/NanoNodeMCU">Build Your Own! GitHub Link</a>
+        </p>
+        
+
+        
+        <!-- Footer -->
+        <hr></hr> <!-- Horizontal Ruler -->
+        <h5 id="info" style="text-align:center">Site Information</h5>
+        <p style="text-align:center">Website owned and operated by Carter Moody.
+            <a href="https://www.cartermoody.com">Click here to home</a>
+        </p>
+
+        <!-- This brings in the script that allows us to copy the nano address with one click! -->
+        <script src="copyaddress.js"></script>
+
+    </body>
+</html>
