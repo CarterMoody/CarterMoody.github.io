@@ -51,9 +51,16 @@
 
 
         <!-- Load and Center Youtube Embed Video -->
+        <!-- New Method is this:
+            0. Old direct link always changes with new stream: src="https://www.youtube.com/embed/U9WZVMa9c58?autoplay=1&mute=1"
+            1. How To: https://stackoverflow.com/questions/39275889/how-to-embed-new-youtubes-live-video-permanent-url
+            2. Permanent Link to Current Livestream on Given Channel: https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID
+            3. Get CHANNEL_ID from: https://www.youtube.com/account_advanced
+            4. Full link with autoplay and mute: src="https://www.youtube.com/embed/live_stream?channel=UCErXmjslZq1scwuezZL9UCQ&autoplay=1&mute=1
+        -->
         <p align="center">
             <iframe width="420" height="315";
-            src="https://www.youtube.com/embed/U9WZVMa9c58?autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/live_stream?channel=UCErXmjslZq1scwuezZL9UCQ&autoplay=1&mute=1"    
             allowfullscreen>
             </iframe>
         </p>
